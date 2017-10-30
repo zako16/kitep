@@ -29,22 +29,22 @@ DATABASES = {
 Начальная ссылка на rest службу `[будет позже :)]`
 Ниже все ссылки для запросов, вконце каждой ссылки надо добавить `?format=json`, `Content-type = application/json`. Для загрузки данных с изображениями надо отправлять данные в форме `form-data`:
 * Слайды `GET`: `/slider/`
-* Партнеры `GET`: `/partners/`
-  Один партнер `GET`: `/partners/[id_of_partner]/`
-* Книги:
-  Список всех книг `GET`: `/books/`
-  Список всех категорий `GET`: `/books/categories/`
-  Список книг по одной категории `GET`: `/books/categories/[category_id]/`
-  Список годов выпуска `GET`: `/books/years/`
-  Список книг по году выпуска `GET`: `/books/years/[year]/`
-  Список статусов книг `GET`: `/books/statuses/`
-  Список типов обложек книг `GET`: `/books/covertypes/`
-  Список книг по пользователю `GET`: `/books/users/[username]/`
+* Партнеры `GET`: `/partners/`<br />
+  Один партнер `GET`: `/partners/[id_of_partner]/`<br />
+* Книги:<br />
+  Список всех книг `GET`: `/books/`<br />
+  Список всех категорий `GET`: `/books/categories/`<br />
+  Список книг по одной категории `GET`: `/books/categories/[category_id]/`<br />
+  Список годов выпуска `GET`: `/books/years/`<br />
+  Список книг по году выпуска `GET`: `/books/years/[year]/`<br />
+  Список статусов книг `GET`: `/books/statuses/`<br />
+  Список типов обложек книг `GET`: `/books/covertypes/`<br />
+  Список книг по пользователю `GET`: `/books/users/[username]/`<br />
 
-  Создание книги `POST`: `/books/`
-  Редактирование книги `PUT`: `/books/[book_id]/`
-  Удаление книги `DELETE`: `/books/[book_id]/`
-* Аккаунты, пользователи:
+  Создание книги `POST`: `/books/`<br />
+  Редактирование книги `PUT`: `/books/[book_id]/`<br />
+  Удаление книги `DELETE`: `/books/[book_id]/`<br />
+* Аккаунты, пользователи:<br />
 
 
 ###### Примечания:
