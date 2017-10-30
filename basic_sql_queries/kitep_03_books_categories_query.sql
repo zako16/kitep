@@ -1,0 +1,12 @@
+use kitep_db;
+INSERT INTO `books_categories`(title, slug) values ('Художественная литература', 'fiction');
+INSERT INTO `books_categories`(title, slug) values ('Детская литература', 'children');
+INSERT INTO `books_categories`(title, slug) values ('Школьная литература', 'school');
+INSERT INTO `books_categories`(title, slug) values ('Энциклопедии', 'encyclopedias');
+INSERT INTO `books_categories`(title, slug) values ('Медицина', 'medicine');
+INSERT INTO `books_categories`(title, slug) values ('Психология', 'psychology');
+INSERT INTO `books_categories`(title, slug) values ('IT-литература', 'it_literature');
+INSERT INTO `books_categories`(title, slug) values ('Юридическая литература', 'law');
+INSERT INTO `books_categories`(title, slug) values ('Бизнес и экономика', 'business_and_economics');
+INSERT INTO `books_categories`(title, slug) values ('Книги на иностранных языках', 'foreign_languages');
+INSERT INTO `books_categories`(title, slug) values ('Разное', 'other');
