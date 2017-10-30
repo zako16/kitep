@@ -43,8 +43,99 @@ DATABASES = {
 
   Создание книги `POST`: `/books/`<br />
   Редактирование книги `PUT`: `/books/[book_id]/`<br />
+  Закрытие предложения `PUT`: `/books/[book_id]/` где надо указать `is_issue:false`<br />
   Удаление книги `DELETE`: `/books/[book_id]/`<br />
 * Аккаунты, пользователи:<br />
+
+## Модели для запросов
+
+1. Слайдер:
+```
+id : int
+slide : text
+title : text
+```
+2. Партнеры:
+```
+id : int
+title : text
+slug : text
+description : text
+image : text
+created_at : text
+updated_at : text
+```
+3. Новости:
+```
+id : int
+title : text
+description : text
+image : text
+created_at : text
+updated_at : text
+```
+4. Категории книг:
+```
+id : int
+title : text
+slug : text
+```
+5. Статусы книг (состояние книги):
+```
+id : int
+status : text
+```
+6. Годы издания книг (примерно от 1990-2017):
+```
+id : int
+year : int
+```
+7. Типы обложек (по умолчанию их пока два вообще: твердая и мягкая. Но бывают и кожанные и тряпичные):
+```
+id : int
+type : text
+```
+8. Издатель книги:
+```
+id : int
+title : text
+```
+9. Книга:
+```
+title : text
+author : text
+cover : int (id)
+category : int (id)
+description : text
+user : int (id)
+year : int (id)
+coverType : int (id)
+publisher : int (id)
+status : int (id)
+exchange : boolean
+sale : boolean
+price : int
+created_at : text
+updated_at : text
+is_issue : boolean
+```
+9.1. Книга для POST и PUT методов:
+```
+title : text
+author : text
+cover : int (id)
+category : int (id)
+description : text
+user : int (id)
+year : int (id)
+coverType : int (id)
+publisher : int (id)
+status : int (id)
+exchange : boolean
+sale : boolean
+price : int
+is_issue : boolean
+```
 
 
 ###### Примечания:

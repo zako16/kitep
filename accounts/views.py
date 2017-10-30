@@ -34,7 +34,7 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
 
 
 class UserSignInView(APIView):
-    permission_classes()
+    # permission_classes()
     @csrf_exempt
     def post(self, request, format=None):
         serializer = UserAuthSerializers(data=request.data)
