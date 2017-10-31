@@ -30,6 +30,13 @@ class UserAuthSerializers(serializers.ModelSerializer):
         return data
 
 
+class EmailSerializer(serializers.Serializer):
+    email = serializers.CharField(max_length=255)
+
+    def validate(self, attrs):
+         if attrs is not None:
+            return attrs
+
 class PersonSerializers(serializers.ModelSerializer):
     class Meta:
         model = Person

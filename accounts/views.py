@@ -14,6 +14,7 @@ from rest_framework.authtoken.models import Token
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.conf import settings
+from accounts.email_confirmation import EmailSender
 
 
 class UserSignupView(APIView):
@@ -54,3 +55,15 @@ class UserSignInView(APIView):
         # else:
         #     context = {'login_error': 'Пароль или логин неправильны'}
         # return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
+class EmailConfirmationView(APIView):
+    def get(self):
+        pass
+
+    @csrf_exempt
+    def post(self, request, format=None):
+        serializer = EmailSerializer(data=request.data)
+        if serializer.is_valid():
+            EmailSender(serializer.data)
+            return Response(serializer.data, status=status.HTTP_200_OK)

@@ -110,10 +110,19 @@ class CategoriesListView(APIView):
 
 
 class YearsListViews(APIView):
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
         content = Years.objects.all()
         serializer = YearsSerializers(content, many=True)
         return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
+
+    def post(self, request):
+        ch = Years.objects.all()
+        if request.user.is_superuser and ch is None:
+            for year in range(1900, 2018):
+                obj = Years.objects.create(year=year)
+                obj.save()
+            return Response(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
 
 class PublishersListView(APIView):

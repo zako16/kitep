@@ -1,9 +1,0 @@
-{% extends 'homepage/core.html' %}
-
-{% block content %}
-	{% for item in partner %}
-		<a href="{% url 'partner' item.slug %}">{{item.title}}</a>
-		<img src="{{item.image.url}}">
-		{{item.description}}
-	{% endfor %}
-{% endblock %}

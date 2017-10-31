@@ -1,0 +1,149 @@
+[
+  {
+    "model": "books.covertypes",
+    "pk": 1,
+    "fields": {
+      "type": "Твердая"
+    }
+  },
+  {
+    "model": "books.covertypes",
+    "pk": 2,
+    "fields": {
+      "type": "Мягкая"
+    }
+  },
+  {
+    "model": "books.statuses",
+    "pk": 1,
+    "fields": {
+      "status": "Новое"
+    }
+  },
+  {
+    "model": "books.statuses",
+    "pk": 2,
+    "fields": {
+      "status": "Хорошее"
+    }
+  },
+  {
+    "model": "books.statuses",
+    "pk": 3,
+    "fields": {
+      "status": "Среднее"
+    }
+  },
+  {
+    "model": "books.statuses",
+    "pk": 4,
+    "fields": {
+      "status": "Плохое"
+    }
+  },
+  {
+    "model": "books.publisher",
+    "pk": 1,
+    "fields": {
+      "title": "РОСМЭН"
+    }
+  },
+  {
+    "model": "books.publisher",
+    "pk": 2,
+    "fields": {
+      "title": "АЗБУКА"
+    }
+  },
+  {
+    "model": "books.publisher",
+    "pk": 3,
+    "fields": {
+      "title": "Эксмо"
+    }
+  },
+  {
+    "model": "books.publisher",
+    "pk": 4,
+    "fields": {
+      "title": "АСТ"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 1,
+    "fields": {
+      "title": "Художественная литература", "slug": "fiction"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 2,
+    "fields": {
+      "title": "Детская литература", "slug": "children"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 3,
+    "fields": {
+      "title": "Школьная литература", "slug": "school"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 4,
+    "fields": {
+      "title": "Энциклопедии", "slug": "encyclopedias"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 5,
+    "fields": {
+      "title": "Медицина", "slug": "medicine"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 6,
+    "fields": {
+      "title": "Психология", "slug": "psychology"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 7,
+    "fields": {
+      "title": "IT-литература", "slug": "it_literature"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 8,
+    "fields": {
+      "title": "Юридическая литература", "slug": "law"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 9,
+    "fields": {
+      "title": "Бизнес и экономика", "slug": "business_and_economics"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 10,
+    "fields": {
+      "title": "Книги на иностранных языках", "slug": "foreign_languages"
+    }
+  },
+  {
+    "model": "books.categories",
+    "pk": 11,
+    "fields": {
+      "title": "Разное", "slug": "other"
+    }
+  }
+]

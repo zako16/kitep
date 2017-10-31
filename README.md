@@ -46,6 +46,7 @@ DATABASES = {
   Закрытие предложения `PUT`: `/books/[book_id]/` где надо указать `is_issue:false`<br />
   Удаление книги `DELETE`: `/books/[book_id]/`<br />
 * Аккаунты, пользователи:<br />
+  Регистрация пользователя `POST`: `/accounts/signup/`
 
 ## Модели для запросов
 

@@ -7,7 +7,8 @@ router = routers.SimpleRouter()
 
 urlpatterns = [
     url(r'signup/^$', UserSignupView.as_view(), name='signup'),
-    url(r'signin/^$', UserSignInView.as_view(), name='signin'),
+    # url(r'signin/^$', UserSignInView.as_view(), name='signin'),
+    url(r'email/^$', EmailConfirmationView.as_view(), name='email'),
 ]
 
 urlpatterns += router.urls
