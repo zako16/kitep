@@ -26,7 +26,7 @@ DATABASES = {
 
 ## URLs
 
-Начальная ссылка на rest службу `[будет позже :)]`<br />
+Начальная ссылка на rest службу `http://zako16.pythonanywhere.com/`<br />
 Ниже все ссылки для запросов, вконце каждой ссылки надо добавить `?format=json`, `Content-type = application/json`. Для загрузки данных с изображениями надо отправлять данные в форме `form-data`:<br />
 * Слайды `GET`: `/slider/`
 * Партнеры `GET`: `/partners/`<br />
